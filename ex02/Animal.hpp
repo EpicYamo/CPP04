@@ -6,7 +6,7 @@
 /*   By: aaycan <aaycan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 00:46:19 by aaycan            #+#    #+#             */
-/*   Updated: 2026/04/02 03:58:10 by aaycan           ###   ########.fr       */
+/*   Updated: 2026/04/02 03:58:21 by aaycan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Animal
 		Animal &operator=(const Animal &other);
 		virtual ~Animal(); 
 
-		virtual void makeSound() const;
+		virtual void makeSound() const = 0;
 		std::string getType() const;
 };
 
