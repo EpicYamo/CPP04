@@ -6,7 +6,7 @@
 /*   By: aaycan <aaycan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 00:46:24 by aaycan            #+#    #+#             */
-/*   Updated: 2026/04/02 03:58:18 by aaycan           ###   ########.fr       */
+/*   Updated: 2026/04/02 04:01:20 by aaycan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,6 @@ Animal &Animal::operator=(const Animal &other)
 Animal::~Animal()
 {
 	std::cout << "Animal Destructor called." << std::endl;
-}
-
-void Animal::makeSound() const
-{
-	std::cout << "The Animal class doesn't have a specific sound." << std::endl;
 }
 
 std::string Animal::getType() const
