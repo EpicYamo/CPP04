@@ -6,7 +6,7 @@
 /*   By: aaycan <aaycan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 00:46:24 by aaycan            #+#    #+#             */
-/*   Updated: 2026/04/02 04:01:20 by aaycan           ###   ########.fr       */
+/*   Updated: 2026/04/12 03:15:16 by aaycan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 Animal::Animal() : type_("Animal")
 {
-	std::cout << "Animal Default constructor called." << std::endl;
+	std::cout << "Animal Default constructor called" << std::endl;
 }
 
 Animal::Animal (std::string type) : type_(type)
 {
-	std::cout << "Animal Type constructor called." << std::endl;
+	std::cout << "Animal Type constructor called" << std::endl;
 }
 
 Animal::Animal(const Animal &other)
 {
-	std::cout << "Animal Copy constructor called." << std::endl;
+	std::cout << "Animal Copy constructor called" << std::endl;
 	*this = other;
 }
 
@@ -40,7 +40,7 @@ Animal &Animal::operator=(const Animal &other)
 
 Animal::~Animal()
 {
-	std::cout << "Animal Destructor called." << std::endl;
+	std::cout << "Animal Destructor called" << std::endl;
 }
 
 std::string Animal::getType() const

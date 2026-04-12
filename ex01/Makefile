@@ -2,7 +2,7 @@ NAME		:= i_dont_want_to_set_the_world_on_fire
 SRCS		:= main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 OBJS		:= $(SRCS:.cpp=.o)
 CPP			:= c++
-CPPFLAGS	:= -Wall -Wextra -Werror -std=c++98 -pedantic
+CPPFLAGS	:= -Wall -Wextra -Werror -std=c++98
 RM			:= rm -f
 
 all: $(NAME)
